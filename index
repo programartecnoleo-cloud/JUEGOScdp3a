@@ -1,0 +1,132 @@
+html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos 3°A - Colegio del Prado</title>
+    <meta name="description" content="Juegos desarrollados por los estudiantes de 3°A en el proyecto integrador de Biología y Tecnología del Colegio del Prado">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <svg id="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg id="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+
+    <div class="container">
+        <header class="header">
+            <img src="logo-colegio.jpg" alt="Colegio del Prado" class="logo">
+            <div>
+                <h1 class="title">Juegos de 3°A</h1>
+                <p class="subtitle">Proyecto integrador: Biología y Tecnología</p>
+                <p class="school">Colegio del Prado</p>
+            </div>
+        </header>
+
+        <div class="intro">
+            <h2 class="section-title">Nuestros Proyectos</h2>
+            <p class="section-text">¡Descubrí los juegos que creamos! Hacé click en "Jugar" para comenzar.</p>
+        </div>
+
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-header gradient-cyan">
+                    <div class="overlay"></div>
+                    <span class="game-icon">🎨</span>
+                </div>
+                <div class="game-content">
+                    <div class="game-info">
+                        <h3 class="game-title">Juego de Memoria</h3>
+                        <p class="game-subtitle">Cartucheras de Colores</p>
+                        <p class="game-description">Pon a prueba tu memoria recordando la secuencia de colores</p>
+                    </div>
+                    <button class="play-button" onclick="playGame('juego-memoria.html')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Jugar Ahora
+                    </button>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-header gradient-green">
+                    <div class="overlay"></div>
+                    <span class="game-icon">🔤</span>
+                </div>
+                <div class="game-content">
+                    <div class="game-info">
+                        <h3 class="game-title">Palabra Secreta</h3>
+                        <p class="game-subtitle">Adivina el Anagrama</p>
+                        <p class="game-description">Descifra las palabras mezcladas antes de que se acabe el tiempo</p>
+                    </div>
+                    <button class="play-button" onclick="playGame('palabra-secreta.html')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Jugar Ahora
+                    </button>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-header gradient-yellow">
+                    <div class="overlay"></div>
+                    <span class="game-icon">🎮</span>
+                </div>
+                <div class="game-content">
+                    <div class="game-info">
+                        <h3 class="game-title">Aventura Arcade</h3>
+                        <p class="game-subtitle">MakeCode Arcade</p>
+                        <p class="game-description">Explora un mundo de aventuras en este juego creado con MakeCode</p>
+                    </div>
+                    <button class="play-button" onclick="playGame('https://arcade.makecode.com/S34553-18888-61830-80373')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        Jugar en MakeCode
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="benefits-section">
+            <div class="benefits-content">
+                <h3 class="benefits-title">💡 Beneficios de los Juegos Educativos</h3>
+                <p class="benefits-text">
+                    Estos juegos no solo son divertidos, sino que también ejercitan tu cerebro de manera activa. 
+                    Al jugarlos, estimulás la memoria, la concentración y el pensamiento lógico. 
+                    Mantener el cerebro activo a través de desafíos mentales como estos ayuda a fortalecer las conexiones neuronales, 
+                    lo que puede contribuir a una mejor salud cognitiva y reducir el riesgo de desarrollar 
+                    enfermedades neurodegenerativas en el futuro. ¡Un cerebro ejercitado es un cerebro saludable!
+                </p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="footer-text">
+                <span class="footer-highlight">Colegio del Prado</span> - 3°A
+            </p>
+            <p class="footer-motto">"Saber, Ética y Amor"</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
